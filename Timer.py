@@ -26,10 +26,10 @@ if __name__ == "__main__":
         if i%6 == 5:
             #play review sound
             playMusic("sound/changeStatus.wav")
-            print("Review unit: ", i//6+1)
+            print("Review unit: ", i//6+1, " --> ", datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
             for j in range(9):
                 time.sleep(5.5)
-                print("Next")
+                print("Next", datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
                 playMusic("sound/dot.wav")
             time.sleep(5.5)
             if i != 29:
